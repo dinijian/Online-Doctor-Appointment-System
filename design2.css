@@ -1,0 +1,430 @@
+*{
+	margin:0;
+}
+nav{
+	display:flex;
+	background-color:AliceBlue;
+	height: 70px;
+}
+nav ul{
+	text-align:left;
+	list-style:none;
+	
+	width:100%;
+	transition: 700ms ease-in-out;
+	
+}
+#user {
+	text-align:right;
+	padding-left: 25%;
+	font-size:20px;
+}
+#user i{
+	font-size: 20px;
+	padding-right: 2%;
+}
+#nav_wrap ul:hover{
+	background-color:PowderBlue;
+}
+#nav_wrap ul li a{
+	text-decoration: none;
+	padding-bottom: 0 px;
+	color:MidnightBlue;
+	font-weight: 500;
+	
+
+}
+#nav_wrap ul li:hover a {
+  transform: scale(1.2);
+  
+}
+li a{
+	transition: 300ms ease-in-out;
+}
+li {
+	display: inline-flex;
+	padding: 1%;
+	font-family: arial;
+	
+	font-size: 15px;
+  padding-top: 25px;
+	
+}
+#book {
+	height: 500px;
+	background :  url("imagess/docpatient.jpg") no-repeat top center;
+	    background-size: cover !important;
+	    padding-top: 25%;
+      background-attachment: fixed;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchTerm {
+  width: 300px;
+  border: 3px solid #00B4CC;
+  /*border-right: none;*/
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 100px;
+  height: 50px;
+  border: 1px solid deepskyblue;
+  background: deepskyblue;
+  text-align: center;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 80%;
+  left: 16%;
+  
+}
+.texloc {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: monospace;  
+  font-size: 28px;
+  color: black;
+  padding-left: 10%;
+  font-size: 45px;
+  animation: animated-text 4s steps(29) 1s 1 normal both,
+             animated-cursor 600ms steps(29) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 740px;}
+}
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+#blog{
+  height:1000px;
+  display: inline-block;
+  margin-left: 95 px;
+  align-content: center;
+  /*background-color: lightcyan;*/
+}
+#blog-R-info img{
+    width: 100%;
+      height: 200px;
+    margin: 30px 0 0px 100px;
+    box-sizing: border-box;
+    align-content: center;}
+
+    #blog-R-info{   
+    height: 100%;
+    width: 30%;
+    float: left;
+    margin: 10px 30px 0 100px}
+
+    #blog-R-info-da{    
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f9cc4a;
+    font-weight: 400;
+    text-align: left;
+    margin: 30px 0 0 100px;
+    font-style: italic;
+    letter-spacing: 2.4px;}
+  
+#blog-R-info-t a{
+            font-size: 22px;
+    line-height: 1.36;
+    color: #000;
+    text-align: left;
+    font-family: Roboto,sans-serif;
+    text-decoration: none;
+    font-weight: bold;}
+  
+#blog-R-info-t a:hover{
+
+    text-decoration:underline;}
+
+    #blog-R-info-t{ margin: 5px 0 0 100px;
+    text-align: left;}
+
+#blog-R-info-au{  
+font-size: 20px;
+    line-height: 2.57;
+    color: #a4aeb0;
+    font-weight: 300;
+    margin: 10px 0 2px 100px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Merriweather', serif;}
+    html{
+      scroll-behavior: smooth;
+    }
+
+.select .option{
+  padding: 50px;
+}
+
+    .box {
+        position: relative;
+        display: inline-block;
+        height:300px; /* Make the width of box same as image */
+    }
+    .box img{
+      height: 300px;
+      width:300px;
+      border-radius: 25px;
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 80%; /* Adjust this value to move the positioned div up and down */
+        /*background: rgba(0, 0, 0, 0.8);*/
+        font-family: Arial,sans-serif;
+        color: white;
+        width: 60%; /* Set the width of the positioned div */
+    }
+    .box .text:hover  {
+  transform: scale(1.2);
+  color: black;
+  
+}
+.text{
+  transition: 300ms ease-in-out;
+}
+.box img:hover  {
+  transform: scale(1.1);
+  opacity: 0.8;
+  
+}
+.box img{
+  transition: 300ms ease-in-out;
+}
+.icons, .icons:before, .icons:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.icons{
+  color: lavender;
+  height: 1000px;
+}
+
+.shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 10px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 10px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 3px 3px 10px inset;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.shadow:hover {
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 55px inset;
+}
+.shadow img {
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  /*padding: 20px 0px;*/
+  margin: 40px 0 0px 100px;
+
+}
+.shadow img:hover  {
+  transform: scale(1.1);
+  /*opacity: 0.8;*/
+
+  
+}
+.shadow .text:hover  {
+  transform: scale(1.3);
+  color: grey;
+  
+}
+.text{
+  transition: 300ms ease-in-out;
+  /*text-decoration: none;*/
+  color: ;
+}
+.text a{
+  text-decoration: none;
+  color: #084949;
+  font-size: 20px;
+}
+.shadow img{
+  transition: 300ms ease-in-out;
+}
+.shadow .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 2px;
+        right: 2px;        
+        text-align: center;
+        top: 60%; /* Adjust this value to move the positioned div up and down */
+        /*background: rgba(0, 0, 0, 0.8);*/
+        font-family: Arial,sans-serif;
+        color: black;
+        width: 60%;
+        text-decoration: none; /* Set the width of the positioned div */
+    }
+
+
+
+   
+
+/** {box-sizing: border-box}*/
+/*body {font-family: Verdana, sans-serif; margin:0}*/
+
+#review_head{
+  /*height: 450px;*/
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-family: Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /*position: relative;
+  background: #f1f1f1f1;
+  
+  height: 300px;
+  font-family: Verdana, sans-serif; margin:0;*/
+  background: url("./imagess/review.jpg")  ;
+  height:450px;
+  width:auto;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #A4E95F;
+  font-size: 35px;
+  padding-top: 30px;
+  /*float: left;*/
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  /*padding: 80px;*/
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+   /*color: #ddd*/
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: width 300ms ease-in-out;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.8);*/
+  background-color: #ddd;
+  color: white;
+  width: 30px;
+  border-radius: 40px;
+   transition: width 300ms ease-in-out;
+   /*transform: scale(1.2);*/
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;
+height: 20px;
+size: 20px;}
+/*q1{font-style: italic;
+height: 20px;
+size: 20px;
+color: black;
+
+}*/
+
+/* Add a blue color to the author */
+.author {color: aqua;
+padding: 20px;
+font-size: 40px;}
+
+
+#last{
+  height: 400px;
+  background-color: azure;
+}

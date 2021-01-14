@@ -1,0 +1,181 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript">
+     function validateForm() {
+     var name = document.forms["registration_form"]["name"];               
+    var email = document.forms["registration_form"]["email"];    
+    var phone = document.forms["registration_form"]["phone"];  
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your phone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+    return true; 
+</script>
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">MrDOC</a></h1>
+	</div>
+</div>
+<div id="menu" class="container">
+	<ul>
+		<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+		<li><a href="#" accesskey="2" title="">Services</a></li>
+		<li><a href="#" accesskey="3" title="">Contact Us</a></li>
+        <li><a href="signup.php" accesskey="4" title="">SignUp</a></li>
+                <li><a href="signin.php" accesskey="5" title="">SignIn</a></li>
+                <li><a href="docsignin.php" accesskey="6" title="">Doctor Login</a></li>
+	</ul>
+</div>
+<div id="page" class="container">
+	<div id="sidebar1">
+<h2>Read Health related blogs</h2>
+		<div id="blog-R-info">
+			<a href="" target="_blank">
+				<img src="images/shiny-hair.jpg" alt="b1" width="280" height="250" />
+			</a>
+			<div id="blog-R-info-t">
+				<p>
+				<a href="" target="_blank">Winter Hair Care : Tips for Hair Care during Winters</a>
+			</div>
+			<div id="blog-R-info-au">by Dini Jain
+			</div>
+		</p>
+		</div>
+
+		<div id="blog-R-info">
+			<a href="" target="_blank">
+				<img src="images/fatigue.jpg" alt="b2" />
+			</a>
+			<div id="blog-R-info-t">
+				<p>
+				<a href="" target="_blank">Chronic Fatigue Syndrome: Symptoms,Causes and Risks</a>
+			</div>
+			<div id="blog-R-info-au">by Sahil Rastogi
+			</div>
+		</p>
+		</div>
+
+		<div id="blog-R-info">
+			<a href="" target="_blank">
+				<img src="images/childhood trauma.jpg" alt="b3"  width="280 " height="250" />
+			</a>
+			<div id="blog-R-info-t">
+				<p>
+				<a href="" target="_blank">Definition of Childhood Trauma: Have a Look on its Major Symptoms</a>
+			</div>
+			<div id="blog-R-info-au">by Meenakshi Bharadwaj
+			</div>
+		</p>
+		</div>
+		<div id="blog-R-info">
+			<a href="" target="_blank">
+				<img src="images/medicine.jpg" alt="b4" />
+			</a>
+			<div id="blog-R-info-t">
+				<p>
+				<a href="" target="_blank">6 Side Effecs of Pain Medicines, That Should Not be Overlooked</a>
+			</div>
+			<div id="blog-R-info-au">by Shilpy Rana
+			</div>
+		</p>
+		</div>
+	</section>
+	</div>
+	<div id="content">
+		<h2>About Us</h2>
+		<p><img src="bg-banner.jpg" width="600" height="250" alt="" /></p>
+		<p><strong>Are</strong> you looking for a simple way to get the best medical care available?
+			<br><strong>Mr doc</strong> offers innovative online doctor database gives you access to country's best medical experts in a fast,easy and friendly way. You can save as much as 70% of your time and money at your next visit to the doctor and with the assurance that the medical professional you are seeing is highly trained and experienced. We use a stringent verification process to ensure you are 100% satisfied every time. <br />
+		</p>
+		<h2>About Our Developers</h2>
+		<p>
+			Our developers are student of jiit noida 2nd year from computer science branch. <br>
+			They created this website as a database systems and web project.
+			<div class="row">
+  <div class="column">
+    <img src="images/np.jpg" alt="" style="width:80%">
+    <h2>Shilpy</h2>
+  </div>
+  <div class="column">
+    <img src="images/np.jpg" alt="" style="width:80%">
+    <h2>Sahil</h2>
+  </div>
+  <div class="column">
+    <img src="images/np.jpg" alt="" style="width:80%">
+    <h2 style="text-align: center;">Dini</h2>
+  </div>
+  <div class="column">
+    <img src="images/np.jpg" alt="" style="width:80%">
+    <h1>Meenakshi</h1>
+  </div>
+</div>
+		</p>
+	</div>
+	</div>
+</div>
+<footer class="c-footer">
+	<div class="c-footer__wrapper">
+		<div class="c-footer__content">
+			<div class="c-footer__column">
+				<div data-qa-id="footer-heading" class="c-footer__title">
+					<span><center><h1>Contact Us</h1></center></span>
+				</div>
+				<div>
+					<p data-qa-id="footer-item" target="_blank" class="c-footer__item" rel="">
+						<span><h3>Email id:</h3> mrdoc@info.com</span>
+					</p>
+				</div>
+				<div>
+					<p data-qa-id="footer-item" target="_blank" class="c-footer__item" rel="">
+						<span><h3>Phone Number:</h3> +91 98391298XX</span>
+					</p>
+				</div>
+				<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" class="fa fa-Instagram"></a>
+</footer>
+</body>
+</html>

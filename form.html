@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    /*body{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(doc5.jpg);
+        height:50vh;
+        background-size: cover;
+        background-position: centre;
+        align :centre;
+        padding:200px;
+        margin-top:250px;
+    }*/
+    body{
+        background-color: lightgray;
+    }
+        .form-style-5{
+            max-width: 800px;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            margin: 10px auto;
+            padding: 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+        .form-style-5 fieldset{
+            border: none;
+        }
+        .form-style-5 legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .form-style-5 label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .form-style-5 input[type="text"],
+        .form-style-5 input[type="date"],
+        .form-style-5 input[type="datetime"],
+        .form-style-5 input[type="email"],
+        .form-style-5 input[type="number"],
+        .form-style-5 input[type="search"],
+        .form-style-5 input[type="time"],
+        .form-style-5 input[type="url"],
+        .form-style-5 textarea,
+        .form-style-5 select {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            background: rgba(255,255,255,.1);
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            margin: 0;
+            outline: 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box; 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box; 
+            background-color: #e8eeef;
+            color:#8a97a0;
+            -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+            margin-bottom: 30px;
+        }
+        .form-style-5 input[type="text"]:focus,
+        .form-style-5 input[type="date"]:focus,
+        .form-style-5 input[type="datetime"]:focus,
+        .form-style-5 input[type="email"]:focus,
+        .form-style-5 input[type="number"]:focus,
+        .form-style-5 input[type="search"]:focus,
+        .form-style-5 input[type="time"]:focus,
+        .form-style-5 input[type="url"]:focus,
+        .form-style-5 textarea:focus,
+        .form-style-5 select:focus{
+            background: #d2d9dd;
+        }
+        .form-style-5 select{
+            -webkit-appearance: menulist-button;
+            height:35px;
+        }
+        .form-style-5 .number {
+            background: lightskyblue;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+            border-radius: 15px 15px 15px 0px;
+        }
+        
+        .form-style-5 input[type="submit"],
+        .form-style-5 input[type="button"]
+        {
+            position: relative;
+            display: block;
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            margin: 0 auto;
+            background: #1abc9c;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            width: 100%;
+            border: 1px solid #16a085;
+            border-width: 1px 1px 3px;
+            margin-bottom: 10px;
+        }
+        .form-style-5 input[type="submit"]:hover,
+        .form-style-5 input[type="button"]:hover
+        {
+            background: #109177;
+        }
+        </style>
+</head>
+<body>
+    <div class="form-style-5">
+        <form action="doc_php.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+        <legend><span class="number">1</span>Info</legend>
+        <label for="fname"> Name</label>
+        <input id="fname" type="text" name="field1" placeholder="Your Name *">
+
+        <label for="2"> Date of Birth</label>
+        <input id="2" type="date" name="field3" placeholder="entre dob *">
+        <label for="3"> mobile no.</label>
+        <input id="3" type="number" name="field4" placeholder="Your mobile number *">
+        <label for="4"> Emergency Contact No.</label>
+        <input id="4" type="number" name="field5" placeholder="Emergency Contact Number *">
+        <label for="5"> Sex-</label>
+        Male<input id="5" type="radio" name="field6" value="male">
+        Female<input id="5" type="radio" name="field6" value="female" >
+        <br>
+        &ensp;<br>
+        &ensp;<br>
+        <legend><span class="number">2</span>Address</legend>
+        <input id="14" type="text" name="field21" placeholder="Street Address *">
+        <input id="13" type="text" name="field31" placeholder="City *">
+        <input id="12" type="text" name="field41" placeholder="State *">
+        <input id="11" type="number" name="field51" placeholder="Zip Code *"><br>
+        <legend><span class="number">3</span>Medical History</legend>
+        <label for="111">Age</label>
+        <input id="111" type="number" name="field7" placeholder="Age *">
+        <label for="112">Blood Group</label>
+        <input id="112" type="text" name="field8" placeholder="Blood Group *">
+        <label for="113"> Weight</label>
+        <input id="113" type="text" name="field9" placeholder="In kg *">
+        <label for="114"> Height</label>
+        <input id="114" type="text" name="field10" placeholder="In cm *">
+        <ul>
+       <li> <label for="115"> Do you smoke?</label>
+        Yes<input id="115" type="radio" name="field11" value="yes" >
+        No<input id="115" type="radio" name="field11" value="no"></li>
+        <br>
+        &ensp;<br>
+       <li> <label for="116"> Do you drink alcohol?</label>
+        Yes<input id="116" type="radio" name="field12" value="yes" >
+        No<input id="116" type="radio" name="field12" value="no"></li>
+        <br>
+        &ensp;<br>
+       <li> <label for="117"> Do you take medications,pills or drugs?</label>
+        Yes<input id="117" type="radio" name="field13" value="yes">
+        No<input id="117" type="radio" name="field13" value="no"></li>
+        <br>
+        &ensp;<br>
+       <li> <label for="118">Are you under a physician's care?</label>
+        Yes<input id="118" type="radio" name="field14" value="yes">
+        No<input id="118" type="radio" name="field14" value="no"></li>
+        <br>
+        &ensp;<br>
+        <li><label for="119">Have you ever been hospitalized or had a major operation?</label>
+        Yes<input id="119" type="radio" name="field15" value="yes">
+        No<input id="119" type="radio" name="field15" value="no"></li>
+        <br>
+        &ensp;<br>
+        <li><label for="120">Do you use tabacco?</label>
+        Yes<input id="120" type="radio" name="field16" value="yes">
+        No<input id="120" type="radio" name="field16" value="no"></li>
+        </ul>
+        <br>
+        &ensp;<br>
+        &ensp;<br>
+        <legend><span class="number">4</span>Women: Are you</legend>
+        
+        &ensp;<br>
+        <ul>
+        <li><label for="121"> Pregnant/Trying to get Pregnant?</label>
+        Yes<input id="121" type="radio" name="field17" value="yes">
+        No<input id="121" type="radio" name="field17" value="no"></li>
+        <br>
+        &ensp;<br>
+       <li> <label for="122">Taking oral contraceptives?</label>
+        Yes<input id="122" type="radio" name="field18" value="yes">
+        No<input id="122" type="radio" name="field18" value="no"></li>
+        <br>
+        &ensp;<br>
+        <li><label for="123">Nursing?</label>
+        Yes<input id="123" type="radio" name="field19" value="yes">
+        No<input id="123" type="radio" name="field19" value="no"></li>
+        </ul>
+        <br>
+        &ensp;<br>
+        &ensp;<br>
+        <legend><span class="number">5</span>Are you allergic to any of the following?</legend>
+        Aspirin<input id="1222" type="checkbox" name="field20[]" value="aspirin" >&emsp;
+        Penicillin<input id="122" type="checkbox" name="field20[]" value="Penicillin" >&emsp;
+        Codeine<input id="122" type="checkbox" name="field20[]" value="Codeine">&emsp;
+        Local Anesthetics<input id="122" type="checkbox" name="field20[]" value=" Local Anesthetics">&emsp;
+        Acrylic<input id="122" type="checkbox" name="field20[]" value="Acrylic" >&emsp;
+        Metal<input id="122" type="checkbox" name="field20[]" value="Metal">&emsp;
+        Latex<input id="122" type="checkbox" name="field20[]" value="Latex">&emsp;
+        Sulfa Drugs<input id="122" type="checkbox" name="field20[]" value="Sulfa Drugs">&emsp;
+        Other<input id="122" type="checkbox" name="field20[]" value="Other" >&emsp;
+        <br>
+        &ensp;<br>
+        <textarea name="field30" placeholder="About yourself">If other please mention</textarea>
+        <br>
+        &ensp;<br>
+        <legend><span class="number">6</span>Do you have,or have you had any disease please mention.</legend>
+        <textarea name="field3" placeholder="About yourself">write briefly about the diseases you have or have had.</textarea>
+        <br>
+        &ensp;<br>
+        &ensp;<br>
+        <input id="122" type="checkbox" name="field26" >To the best of my knowledge, the questions on this form have been accurately answered. I understand that
+        providing incorrect information can be dangerous to my (or patient's) health .It is my responsibility to inform the doctor 
+        of any canges in medical status. <br>
+        &ensp;<br>
+        &ensp;<br>
+        </fieldset>
+        
+        <input type="submit" value="Submit" name="submitt">
+        </form>
+        </div>
+</body>
+</html>
