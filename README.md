@@ -4,4 +4,5 @@ A Web Application for booking appointments with doctors online, categorized into
 experience, and time adjustments. This web app is most beneficial now then ever (in the times of Coronavirus). 
 In this fast growing digital world, this app is a small step towards the ease of living sustained by technology. 
 Coded using PHP, SQL,HTML, CSS and Javascript.
-! These are not the complete files for this project.
+
+
